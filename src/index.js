@@ -4,24 +4,35 @@ import Burger from './burger.jpg';
 
 function component() {
     const tabContent = document.getElementById('content');
+    const content = document.createElement('div');
 
-    let heading = document.createElement('h1');
+    content.id = 'tab1';
+    content.classList.add('tab-content');
 
-    heading.textContent = "Burger Bros";
+    const heading = document.createElement('h2');
+    heading.textContent = "Home";
 
-    tabContent.appendChild(heading);
+    content.appendChild(heading);
 
-    let burgerPic =  new Image();
-
-    burgerPic.src = Burger;
-
-    burgerPic.alt = 'burger picture';
-
-
-    tabContent.appendChild(burgerPic);
-
+    tabContent.appendChild(content);
 
     return tabContent;
 }
+
+
+/*function createTab1(){
+    const content = document.createElement('div');
+
+    content.id = 'tab1';
+    content.classList.add('tab-content');
+
+    const heading = document.createElement('h2');
+    heading.textContent = "Home";
+
+
+
+}
+*/
+
 
 document.body.appendChild(component());
