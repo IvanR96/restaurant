@@ -4,6 +4,11 @@ import Burger from './burger.jpg';
 
 function component() {
     const tabContent = document.getElementById('content');
+    const title = document.createElement('h1');
+    title.textContent = 'Burger Bros';
+
+    tabContent.appendChild(title);
+    
     const content = document.createElement('div');
 
     content.id = 'tab1';
