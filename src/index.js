@@ -8,19 +8,19 @@ function component() {
     title.textContent = 'Burger Bros';
 
     tabContent.appendChild(title);
-    
-    const content = document.createElement('div');
 
-    content.id = 'tab1';
-    content.classList.add('tab-content');
+    const tabOne = document.createElement('div');
+
+    tabOne.id = 'tab1';
+    tabOne.classList.add('tab-content');
 
     const heading = document.createElement('h2');
     heading.textContent = "Home";
 
     content.appendChild(heading);
 
-    tabContent.appendChild(content);
-
+    tabContent.appendChild(tabOne);
+    
     return tabContent;
 }
 
