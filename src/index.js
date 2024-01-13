@@ -25,7 +25,7 @@ function component() {
 }
 
 
-/*function createTab1(){
+function createTab1(){
     const content = document.createElement('div');
 
     content.id = 'tab1';
