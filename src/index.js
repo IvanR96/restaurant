@@ -37,7 +37,7 @@ function createTab1(){
 
 
 }
-*/
+//
 
 
 document.body.appendChild(component());
