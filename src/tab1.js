@@ -25,20 +25,20 @@ export function createTabContent1() {
     let title = document.createElement('h1');
     title.textContent = "Burger Bros";
 
-    const Burger = new Image();
-    
-    Burger.src = 'burger.jpg';
+   let info =  document.createElement('p');
+   info.textContent = 'Burger bros started in 2021 with the dream of making families come together to  enjoy the best burgers in town!';
 
-    Burger.alt = 'burger image';
-
-    about.appendChild(Burger);
+   
 
     about.appendChild(title);
     
+    about.appendChild(info);
+    
     tabOne.appendChild(about);
+
+
     
 
 
     return tabOne;
   }
-
