@@ -1,6 +1,5 @@
-contactMod = () =>{
-    const 
-
+function contactMod(){
+    
 }
 
 
