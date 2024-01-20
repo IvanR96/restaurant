@@ -5,7 +5,7 @@ function contactMod(){
     contactHeader.textContent = 'Contact Us';
 
     const contactInfo = document.createElement('p');
-    contactInfo.textContent = 'Please feel free to contact us!\nWe are located at 223 Tech Ave, Cupertino,Ca\nPhone number is 123-456-7890';
+    contactInfo.textContent = "Please feel free to contact us!\nWe are located at 223 Tech Ave, Cupertino,Ca\nPhone number is 123-456-7890";
 
     contactDiv.appendChild(contactHeader);
     contactDiv.appendChild(contactInfo);
