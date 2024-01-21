@@ -7,7 +7,7 @@ function homeMod(){
   headline.textContent = 'Burger Bros';
 
   const burgerPic = document.createElement('img');
-  burgerPic.src = 'src\burger.jpg';
+  burgerPic.src = './burger.jpg';
   burgerPic.alt = 'picture of a burger';
   burgerPic.id = 'burger';
 
