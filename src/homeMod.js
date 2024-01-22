@@ -1,3 +1,5 @@
+import Burger from './burger.jpg';
+
 function homeMod(){
   const homeDiv = document.createElement('div');
 
@@ -7,7 +9,7 @@ function homeMod(){
   headline.textContent = 'Burger Bros';
 
   const burgerPic = document.createElement('img');
-  burgerPic.src = './burger.jpg';
+  burgerPic.src = Burger;
   burgerPic.alt = 'picture of a burger';
   burgerPic.id = 'burger';
 
