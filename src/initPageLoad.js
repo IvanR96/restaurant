@@ -1,14 +1,14 @@
+import homeMod from "./homeMod";
+import menuMod from "./menuMod";
+import contactMod from "./contactMod";
+
 function initPageLoad() {
     const contentDiv = document.getElementById('content');
 
-    // Create and append anchors
-    const homeLink = createAnchor('Home', './homeMod.js', 'homeLink');
-    const menuLink = createAnchor('Menu', '#', 'menuLink');
-    const contactLink = createAnchor('Contact', '#', 'contactLink');
+    const navBar = createNavBar();
+    contentDiv.appendChild(navBar);
 
-    contentDiv.appendChild(homeLink);
-    contentDiv.appendChild(menuLink);
-    contentDiv.appendChild(contactLink);
+    // Create and append anchors
 
     // Add event listeners to the anchors (you can move this part to index.js if needed)
     homeLink.addEventListener('click', (event) => {
@@ -20,7 +20,7 @@ function initPageLoad() {
     menuLink.addEventListener('click', (event) => {
         event.preventDefault();
         clearContent();
-        contentDiv.appendChild(menuModule());
+        contentDiv.appendChild(menuMod());
     });
 
     contactLink.addEventListener('click', (event) => {
@@ -28,6 +28,21 @@ function initPageLoad() {
         clearContent();
         contentDiv.appendChild(contactMod());
     });
+
+    contentDiv.appendChild(homeMod());
+
+    function createNavBar() {
+        const navBar = document.createElement('nav');
+        const homeLink = createAnchor('Home', './homeMod.js', 'homeLink');
+        const menuLink = createAnchor('Menu', './menuMod.js', 'menuLink');
+        const contactLink = createAnchor('Contact', './contactMod.js', 'contactLink');
+
+        navBar.appendChild(homeLink);
+        navBar.appendChild(menuLink);
+        navBar.appendChild(contactLink);
+
+        return navBar;
+    }
 
     function clearContent() {
         while (contentDiv.firstChild) {
