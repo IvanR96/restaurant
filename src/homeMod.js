@@ -1,12 +1,19 @@
 import Burger from './burger.jpg';
+import navbarMod from './navbarMod';
 
 function homeMod(){
-  const homeDiv = document.createElement('div');
 
-  // creation of content 
+  const homeDiv = document.createElement('div');
+  homeDiv.id = 'homeDiv';
 
   const headline = document.createElement('h2');
   headline.textContent = 'Burger Bros';
+
+  // creation of content 
+  const navBar = navbarMod();
+
+  homeDiv.appendChild(navBar);
+
 
   const burgerPic = document.createElement('img');
   burgerPic.src = Burger;
