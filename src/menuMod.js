@@ -1,5 +1,6 @@
 import Double from "./double.jpg";
 import Triple from "./triple.jpg";
+import navbarMod from "./navbarMod";
 
 function menuMod() {
     const menuHeader = document.createElement('h2');
@@ -8,13 +9,16 @@ function menuMod() {
     const menuDiv = document.createElement('div');
     menuDiv.id = "menuDiv";
 
-    // Dynamically create content
+    const navBar = navbarMod();
+
+    menuDiv.appendChild(navBar);
 
     // Add menu items dynamically (example with images)
     const menuItem1 = createMenuItem('Double Cheeseburger', Double);
     const menuItem2 = createMenuItem('Triple Cheeseburger', Triple);
 
-    // Append created elements to menuDiv
+
+    
     menuDiv.appendChild(menuHeader);
     menuDiv.appendChild(menuItem1);
     menuDiv.appendChild(menuItem2);
