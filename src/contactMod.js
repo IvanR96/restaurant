@@ -1,3 +1,6 @@
+import navbarMod from "./navbarMod";
+
+
 function contactMod(){
     const contactDiv = document.createElement('div');
 
@@ -7,7 +10,9 @@ function contactMod(){
     const contactInfo = document.createElement('p');
     contactInfo.textContent = "Please feel free to contact us! We are located at 223 Tech Ave, Cupertino,Ca Phonenumber: 123-456-7890";
     
+    const navBar = navbarMod();
 
+    contactDiv.appendChild(navBar);
     contactDiv.appendChild(contactHeader);
     contactDiv.appendChild(contactInfo);
 
