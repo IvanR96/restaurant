@@ -2,6 +2,7 @@
 #burger{
     width: 200px;
     height: 200px;
+    margin-left: 37%;
 }
 
 img{
@@ -15,17 +16,20 @@ img{
 
 }
 
-#homeDiv{
+#homeDiv, #menuDiv, #contact{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 2px solid white;
+    border: none;
+    border-radius: 3rem;
+    background-color: rgba(169, 169, 169, 0.5);
     width: 800px;
     height: 800px;
 }
 
 body{
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     background-image: url('./back.jpg');
     background-size: cover;

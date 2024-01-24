@@ -1,5 +1,6 @@
 import Double from "./double.jpg";
 import Triple from "./triple.jpg";
+import Fries from "./fries.jpg";
 import navbarMod from "./navbarMod";
 
 function menuMod() {
@@ -14,14 +15,16 @@ function menuMod() {
     menuDiv.appendChild(navBar);
 
     // Add menu items dynamically (example with images)
-    const menuItem1 = createMenuItem('Double Cheeseburger', Double);
-    const menuItem2 = createMenuItem('Triple Cheeseburger', Triple);
+    const menuItem1 = createMenuItem('Double Cheeseburger - $8', Double);
+    const menuItem2 = createMenuItem('Triple Cheeseburger - $10', Triple);
+    const menuItem3 = createMenuItem('Fries - $3', Fries);
 
 
     
     menuDiv.appendChild(menuHeader);
     menuDiv.appendChild(menuItem1);
     menuDiv.appendChild(menuItem2);
+    menuDiv.appendChild(menuItem3);
 
     return menuDiv;
 }

@@ -6,7 +6,7 @@ function homeMod(){
   const homeDiv = document.createElement('div');
   homeDiv.id = 'homeDiv';
 
-  const headline = document.createElement('h2');
+  const headline = document.createElement('h1');
   headline.textContent = 'Burger Bros';
 
   // creation of content 
